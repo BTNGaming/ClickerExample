@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Clicker Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Coin Clicker Adventure</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#minigames">Minigames</a></li>
+                <li><a href="#upgrades">Upgrades</a></li>
+                <li><a href="#lore">Lore</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#minigames">Minigames</a></li>
+                <li><a href="#upgrades">Upgrades</a></li>
+                <li><a href="#lore">Lore</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </aside>
+
+        <section id="game-area">
+            <div id="coin-display">
+                <p>Coins: <span id="coinCount">0</span></p>
+                <p>Coins per second: <span id="cps">0</span></p>
+            </div>
+            <button id="clickButton">Click for Coin</button>
+
+            <div id="upgrades">
+                <h2>Upgrades</h2>
+                <div id="upgradesList"></div>
+            </div>
+
+            <div id="minigames">
+                <h2>Minigames</h2>
+                <div id="slot-machine">
+                    <h3>Slot Machine</h3>
+                    <div class="slot-display">
+                        <div class="slot"><div class="slot-content" id="slot1">🍒</div></div>
+                        <div class="slot"><div class="slot-content" id="slot2">🍒</div></div>
+                        <div class="slot"><div class="slot-content" id="slot3">🍒</div></div>
+                    </div>
+                    <button id="spinButton">Spin (5 coins)</button>
+                </div>
+
+                <div id="roulette">
+                    <h3>Roulette</h3>
+                    <canvas id="rouletteWheel" width="300" height="300"></canvas>
+                    <div id="betOptions"></div>
+                    <label for="betAmount">Bet Amount:</label>
+                    <input type="number" id="betAmount" min="1" value="1">
+                    <button id="spinRouletteButton">Spin Roulette</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Coin Clicker Adventure. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
